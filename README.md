@@ -1,14 +1,8 @@
-# Program 4: Hierarchical Routing
+# Program 6: POST and GET Student Collection
 
-`app.js` imports and mounts the parent router at `/api`, matching the lab manual.
+MongoDB database: `studentDB`  
+Collection: `students`
 
-Required existing files:
-- `routes/index.js`
-- `routes/users.js`
-- `routes/api.js`
-- `routes/apiUsers.js`
-- `views/error.jade` and the starter project's public/views files
+The manual's app.js already mounts `usersRouter` at `/users`. The route implementations are in `routes/users.js`.
 
-The manual's normal start command is `npm start` using the Express Generator `bin/www` entry point. `server.js` is included as an optional direct-start alternative (`node server.js`).
-
-Note: The manual specifies the app.js changes and route files, not a separate `server.js`. The app.js above retains the standard Express Generator structure.
+Start with `npm start` through the Express Generator `bin/www` entry point. `server.js` is an optional direct-start alternative.
