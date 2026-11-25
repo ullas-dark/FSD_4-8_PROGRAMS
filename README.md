@@ -1,8 +1,14 @@
-# Program 7: UPDATE and DELETE Student
+# Program 4: Hierarchical Routing
 
-MongoDB database: `studentDB`  
-Collection: `students`
+`app.js` imports and mounts the parent router at `/api`, matching the lab manual.
 
-The manual adds the Mongoose import and connection, and confirms the existing `/users` router mount. UPDATE and DELETE route code belongs in `routes/users.js`.
+Required existing files:
+- `routes/index.js`
+- `routes/users.js`
+- `routes/api.js`
+- `routes/apiUsers.js`
+- `views/error.jade` and the starter project's public/views files
 
-The manual uses the Express Generator `bin/www` entry point. `server.js` is included only as an optional direct-start alternative.
+The manual's normal start command is `npm start` using the Express Generator `bin/www` entry point. `server.js` is included as an optional direct-start alternative (`node server.js`).
+
+Note: The manual specifies the app.js changes and route files, not a separate `server.js`. The app.js above retains the standard Express Generator structure.
