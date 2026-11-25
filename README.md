@@ -1,14 +1,9 @@
-# Program 4: Hierarchical Routing
+# Program 5: Request Validation
 
-`app.js` imports and mounts the parent router at `/api`, matching the lab manual.
+The manual says no app.js changes are required. The important existing lines are:
+- `app.use(express.json());`
+- `app.use('/users', usersRouter);`
 
-Required existing files:
-- `routes/index.js`
-- `routes/users.js`
-- `routes/api.js`
-- `routes/apiUsers.js`
-- `views/error.jade` and the starter project's public/views files
+The validation logic belongs in `routes/users.js` and uses `express-validator`.
 
-The manual's normal start command is `npm start` using the Express Generator `bin/www` entry point. `server.js` is included as an optional direct-start alternative (`node server.js`).
-
-Note: The manual specifies the app.js changes and route files, not a separate `server.js`. The app.js above retains the standard Express Generator structure.
+The manual uses the Express Generator `bin/www` entry point with `npm start`. `server.js` is included only as an optional direct-start alternative.
